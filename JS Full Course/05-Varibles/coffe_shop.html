@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+</head>
+<body>
+    
+
+    <button onclick="
+        console.log(`Hello ${name} and Welcome to Coffe Shop`);
+        ">Enter</button>
+    
+   
+    <button onclick="
+    cart = 10;
+    console.log(`Coffee Added to cart price : $${cart} `);
+    total += 10;
+    " >Coffee</button>
+    
+    <button onclick="
+    cart = 5;
+    console.log(`Tea Added to cart price : $${cart} `);
+    total += 5;
+    " > Tea </button>
+    
+    
+    
+    <button onclick="
+    cart = 6;
+    console.log(`Bun Added to cart price : $${cart} `);
+    total += 6;
+    " >Bun</button>
+    
+    <button onclick="
+    cart = 5;
+    console.log(`Water added to cart price : $${cart}`)
+    total += 5;
+    " >Water</button>
+
+    <button onclick="
+    console.log(`Your Total is : ${total}`);
+    console.log(`Total Tax : 5% `);
+
+    afterTax = total * tax;
+
+    console.log(`Final Price : $${total+afterTax}`);
+
+    
+    
+    
+    " >Total</button>
+
+</body>
+
+<script>
+    let name = 'ZIPPO';
+
+    let cart = 0;
+
+    let total = 0;
+
+    let tax = 0.05;
+
+</script>
+</html>

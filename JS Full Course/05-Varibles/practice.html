@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        total= total+10
+        coffe_number += 1
+        console.log(`${coffe_number}x Coffe is added +${total}`)
+        ">Add Coffe</button>
+    
+    <button onclick="
+    total+=5
+    tea_number+=1
+    console.log(`${tea_number}x Tea is added +${total}`);
+    
+
+    "
+    
+    >Add Tea</button>
+    <button onclick="
+    
+console.log(`Total: ${total}`);
+    "
+    >Show Total</button>
+
+    <button onclick="
+    total = 0
+    console.log(`Reset Done Total is: ${total}`);
+    
+    ">Reset</button>
+</body>
+<script>
+    let tea_number = 0;
+    let coffe_number = 0;
+    let total = 0;
+</script>
+</html>

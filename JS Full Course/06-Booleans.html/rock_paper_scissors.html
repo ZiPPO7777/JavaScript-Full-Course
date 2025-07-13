@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+    
+    <h1>Rock Paper Scissor Game</h1>
+
+    <button onclick="
+    let result = '';
+    let computerMove = '';
+    let randomNumber = Math.floor(Math.random() * 3);
+
+    if(randomNumber === 0){
+        computerMove = 'rock'
+    
+    }else if(randomNumber === 1){
+        computerMove = 'paper'
+    } else if(randomNumber === 2){
+        computerMove = 'scissor'
+    }
+
+    if(computerMove === 'rock'){
+        result = 'Tie';
+    } else if(computerMove === 'paper'){
+        result = 'You Lose';
+    } else if(computerMove === 'scissor'){
+        result = 'You win';
+    }
+    console.log(`You picked Rock and Computer picked: ${computerMove} and the result is: ${result}`)
+    "> Rock </button>
+<!-- -----------------------------------Paper----------------------------------- -->
+    
+    <button onclick="
+    let result2 = '';
+    let computerMove2 = '';
+    let randomNumber2 = Math.floor(Math.random() * 3);
+    if(randomNumber2 === 0){
+        computerMove2 = 'rock'
+    
+    }else if(randomNumber2 === 1){
+        computerMove2 = 'paper'
+    } else if(randomNumber2 === 2){
+        computerMove2 = 'scissor'
+    }
+    
+    if(computerMove2 === 'rock'){
+        result2 = 'You win';
+    } else if(computerMove2 === 'paper'){
+        result2 = 'Tie';
+    } else if(computerMove2 === 'scissor'){
+        result2 = 'You Lose';
+    }
+    console.log('---------------------------------------')
+    console.log(`You picked Paper and Computer picked: ${computerMove2} and the result is: ${result2}`)
+    
+    "> Paper</button>
+
+    <button onclick="
+    let result3 = '';
+    let computerMove3 = '';
+    let randomNumber3 = Math.floor(Math.random() * 3);
+    if(randomNumber3=== 0){
+        computerMove3 = 'rock';
+
+    }else if(randomNumber3 === 1){
+        computerMove3 = 'paper'
+    } else if(randomNumber3 === 2){
+        computerMove3 = 'scissor'
+    }
+    
+    if(computerMove3 === 'rock'){
+        result3 = 'You lose';
+    } else if(computerMove3 === 'paper'){
+        result3 = 'You Win';
+    } else if(computerMove3 === 'scissor'){
+        result3 = 'Tie';
+    }
+    console.log(`You picked Scissor and Computer picked: ${computerMove3} and the result is: ${result3}`)
+
+    "> Scissor </button>
+
+</body>
+</html>
