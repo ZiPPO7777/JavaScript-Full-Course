@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More About Objects</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+
+// null vs undefined
+
+// null = intentionally want something to be empty
+
+
+//-------------------- Auto Boxing --------------------------//
+
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+
+
+const objects1 = {
+    message : 'hello'
+};
+const objects2 = objects1;
+
+objects1.message = 'Good Job'
+console.log(objects1);
+
+const object3 = {
+     message: 'Good Job'
+};
+
+console.log(object3 === objects1);
+console.log(objects2 === objects1);
+
+// Short cuts of Objects 
+
+
+
+const object4 = {
+     message: 'Good Job',
+     price: 799
+};
+
+// const message = object4.message; we can do this using the below Shorcut
+const { message, price } = object4;
+// its called Destructuring - its an eaier way to take properties out of an objects
+console.log(message);
+console.log(price); 
+
+// Shorthand property - Shortcut
+
+const object5 = {
+    message: message
+};
+
+console.log(object5.message);
+
+// But we have a shortcut for this:
+// if the property and variable are same
+//We can write this insteadt
+const object6 = {
+    message,
+    method: function function1(){
+        console.log('method');
+    },
+    method2 (){
+        console.log('method');
+    }
+};
+console.log(object6.message);
+
+object6.method();
+object6.method2();
+
+// see we can write the method using shortcut in method2
+
+//-----same like object5----------
+
+
+
+</script>
+</html>
