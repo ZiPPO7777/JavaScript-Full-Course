@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+
+//More ways to access the data of a objects
+    const product = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        'time': 1,
+        'delivery-type': ' day',
+        rating: {
+            stars: 4.5,
+            count: 87
+        },
+        fun: function function1(){
+            console.log('Function inside Object');
+        }
+    };
+
+    console.log(product);
+    console.log(product.name);
+    console.log(product['name']);
+    console.log(product['delivery-time']); // [] square brackets notation lets us access data that we cant access with . notaion
+    console.log(product['time'] + product['delivery-type']); // we can even add two objects
+    console.log(product['rating']['stars']); 
+    //     OR
+    console.log(product.rating.stars);
+    product.fun();
+
+    // .stringify is used to convert a JS obect to JSON
+    console.log(JSON.stringify(product));  // JavaScript Object ----> JSON(Java Script Object Notation)
+    
+    // Now JSON ----> Java Script Object
+    const jsonString = JSON.stringify(product);
+     // .parse is used to convert a JSON to JS Object
+    console.log(JSON.parse(jsonString)); 
+
+    
+
+
+</script>
+</html>
